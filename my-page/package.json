@@ -1,0 +1,54 @@
+{
+  "name": "my-page",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "pilet"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "my-app": "file:/home/kawasaki/Git/study/piral-demo-project/my-app/my-app-1.0.0.tgz",
+    "piral-cli": "^0.8.4"
+  },
+  "peerDependencies": {
+    "@dbeining/react-atom": "*",
+    "@libre/atom": "*",
+    "history": "*",
+    "react": "*",
+    "react-dom": "*",
+    "react-router": "*",
+    "react-router-dom": "*",
+    "tslib": "*",
+    "path-to-regexp": "*",
+    "my-app": "*"
+  },
+  "scripts": {
+    "debug-pilet": "pilet debug",
+    "build-pilet": "pilet build",
+    "upgrade-pilet": "pilet upgrade",
+    "build": "npm run build-pilet",
+    "start": "npm run debug-pilet"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "piral": {
+    "comment": "Keep this section to allow running `piral upgrade`.",
+    "name": "my-app",
+    "version": "1.0.0",
+    "tooling": "0.8.4",
+    "externals": [],
+    "files": [],
+    "scripts": {
+      "build": "npm run build-pilet",
+      "start": "npm run debug-pilet"
+    },
+    "validators": {},
+    "devDependencies": {},
+    "preScaffold": "",
+    "postScaffold": "",
+    "preUpgrade": "",
+    "postUpgrade": ""
+  }
+}

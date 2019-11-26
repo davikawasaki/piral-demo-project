@@ -1,3 +1,9 @@
+# Cache
+.cache/
+
+# Output
+dist/
+
 # Logs
 logs
 *.log

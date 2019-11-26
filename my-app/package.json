@@ -1,0 +1,44 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "piral"
+  ],
+  "dependencies": {
+    "piral": "^0.8.4"
+  },
+  "scripts": {
+    "start": "piral debug",
+    "build": "npm run build:deploy && npm run build:pilets",
+    "build:deploy": "piral build",
+    "build:pilets": "tsc"
+  },
+  "app": "./src/index.html",
+  "main": "lib/index.js",
+  "pilets": {
+    "files": [],
+    "externals": [],
+    "scripts": {
+      "build": "npm run build-pilet",
+      "start": "npm run debug-pilet"
+    },
+    "validators": {},
+    "devDependencies": {},
+    "preScaffold": "",
+    "postScaffold": "",
+    "preUpgrade": "",
+    "postUpgrade": ""
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router": "latest",
+    "@types/react-router-dom": "latest",
+    "piral-cli": "latest",
+    "sass": "^1.23.6",
+    "typescript": "latest"
+  },
+  "typings": "lib/index.d.ts"
+}
